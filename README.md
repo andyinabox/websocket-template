@@ -2,7 +2,7 @@
 
 A simple template for prototyping with browserify/websockets. Includes the following tools:
 
- * ws and express for the WebSockets server
+ * `ws` and `express` for the WebSockets server
  * `browserify` for bundling
  * `watchify` for watching
  * `errorify` for error handling

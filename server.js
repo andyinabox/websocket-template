@@ -2,11 +2,17 @@ const express = require('express');
 const http = require('http');
 const url = require('url');
 const path = require('path');
+const browserify = require('browserify-dev-middleware');
 const WebSocketServer = require('ws').Server;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(browserify({
+	src: __dirname + '/static',
+  transforms: [require('babelify')]
+}));
+
+app.use(express.static(path.join(__dirname, '/static')));
 
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server: server });
@@ -21,7 +27,6 @@ wss.on('connection', function connection(ws) {
   ws.send('something');
 });
 
-server.on('request', app);
 server.listen(8080, function listening() {
   console.log('Listening on %d', server.address().port);
 });
