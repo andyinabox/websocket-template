@@ -1,6 +1,4 @@
-// const p5 = require('p5');
 const WebSocket = window.WebSocket;
-
 const socket = new WebSocket('ws://localhost:8080');
 
 // Connection opened

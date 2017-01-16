@@ -7,7 +7,7 @@
   "scripts": {
     "start": "concurrently -k \"npm run server\" \"npm run browser\"",
     "browser": "watchify browser.js -v -t babelify -o public/bundle.js -p errorify",
-    "server": "node server.js",
+    "server": "node-dev server.js",
     "globals": "npm install -g browserify && npm install -g watchify"
   },
   "author": {
@@ -18,6 +18,7 @@
   "dependencies": {
     "bufferutil": "^1.3.0",
     "express": "^4.14.0",
+    "express-livereload": "^0.0.24",
     "utf-8-validate": "^2.0.0",
     "ws": "^1.1.1"
   },
@@ -25,7 +26,8 @@
     "babel-preset-latest": "^6.16.0",
     "babelify": "^7.3.0",
     "concurrently": "^3.1.0",
-    "errorify": "^0.3.1"
+    "errorify": "^0.3.1",
+    "node-dev": "^3.1.3"
   },
   "repository": {
     "type": "git",

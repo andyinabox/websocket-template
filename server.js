@@ -6,22 +6,13 @@ const WebSocketServer = require('ws').Server;
 
 const app = express();
 
-// app.use(function (req, res) {
-//   res.send({ msg: "hello" });
-// });
-
 app.use(express.static(path.join(__dirname, '/public')));
-
 
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server: server });
 
 wss.on('connection', function connection(ws) {
 	console.log('connection');
-
-  // const location = url.parse(ws.upgradeReq.upgradeReql, true);
-  // You might use location.query.access_token to authenticate or share sessions
-  // or ws.upgradeReq.headers.cookie (see http://stackoverflow.com/a/16395220/151312)
 
   ws.on('message', function incoming(message) {
     console.log('received: %s', message);
