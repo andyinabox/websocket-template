@@ -1,6 +1,6 @@
 # WebSocket Template
 
-A simple template for prototyping with browserify/express/websockets. Includes the following tools
+A simple template for prototyping with browserify/websockets. Includes the following tools:
 
  * ws and express for the WebSockets server
  * `browserify` for bundling
@@ -22,3 +22,6 @@ Then start both server `watchify` for client JavaScript
 npm start
 ```
 
+# Todo
+
+- [ ] Incorporate livereload
