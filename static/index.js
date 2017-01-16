@@ -1,6 +1,8 @@
 const WebSocket = window.WebSocket;
 const socket = new WebSocket('ws://localhost:8080');
 
+console.log('reload');
+
 // Connection opened
 socket.addEventListener('open', function(event) {
     socket.send('Hello Server!');

@@ -6,6 +6,8 @@ const browserify = require('browserify-dev-middleware');
 const WebSocketServer = require('ws').Server;
 
 const app = express();
+const server = http.createServer(app);
+const wss = new WebSocketServer({ server: server });
 
 app.use(browserify({
 	src: __dirname + '/static',
@@ -14,8 +16,7 @@ app.use(browserify({
 
 app.use(express.static(path.join(__dirname, '/static')));
 
-const server = http.createServer(app);
-const wss = new WebSocketServer({ server: server });
+
 
 wss.on('connection', function connection(ws) {
 	console.log('connection');

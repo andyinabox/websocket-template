@@ -634,10 +634,6 @@ babylon@^6.11.0:
   version "6.15.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.15.0.tgz#ba65cfa1a80e1759b0e89fb562e27dccae70348e"
 
-bal-util@1.13.x:
-  version "1.13.13"
-  resolved "https://registry.yarnpkg.com/bal-util/-/bal-util-1.13.13.tgz#632c49520a367ec5aa854688e10827d9b519325f"
-
 balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
@@ -1011,19 +1007,11 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@*:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d"
-
 commander@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
     graceful-readlink ">= 1.0.0"
-
-commander@~0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-0.6.1.tgz#fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1160,7 +1148,7 @@ debounce@^1.0.0:
   dependencies:
     date-now "1.0.1"
 
-debug@*, debug@^2.1.1, debug@^2.2.0, debug@~2.2.0:
+debug@^2.1.1, debug@^2.2.0, debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
@@ -1321,12 +1309,6 @@ expand-range@^1.8.1:
   resolved "https://registry.yarnpkg.com/expand-range/-/expand-range-1.8.2.tgz#a299effd335fe2721ebae8e257ec79644fc85337"
   dependencies:
     fill-range "^2.1.0"
-
-express-livereload@^0.0.24:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/express-livereload/-/express-livereload-0.0.24.tgz#bec81ff0a7302c8f62db4787a677fc2a8a9ca252"
-  dependencies:
-    livereload "git://github.com/mnmly/node-livereload.git"
 
 express@^4.14.0:
   version "4.14.0"
@@ -1906,14 +1888,6 @@ lexical-scope@^1.2.0:
   dependencies:
     astw "^2.0.0"
 
-"livereload@git://github.com/mnmly/node-livereload.git":
-  version "0.3.3"
-  resolved "git://github.com/mnmly/node-livereload.git#0363d553f3b0a2f99db1564bcb6edf0a9c2daa0d"
-  dependencies:
-    commander "*"
-    watchr "~2.1.3"
-    websocket.io ">= 0.1.0"
-
 load-json-file@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
@@ -2270,7 +2244,7 @@ once@~1.3.3:
   dependencies:
     wrappy "1"
 
-options@>=0.0.5, options@latest:
+options@>=0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
 
@@ -2895,10 +2869,6 @@ timers-browserify@^1.0.1:
   dependencies:
     process "~0.11.0"
 
-tinycolor@0.x:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/tinycolor/-/tinycolor-0.0.1.tgz#320b5a52d83abb5978d81a3e887d4aefb15a6164"
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -3027,19 +2997,6 @@ watchify@^3.6.0:
     through2 "^2.0.0"
     xtend "^4.0.0"
 
-watchr@~2.1.3:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/watchr/-/watchr-2.1.6.tgz#6dc895bf6c95ab6f5e06d811948b320a98413891"
-  dependencies:
-    bal-util "1.13.x"
-
-"websocket.io@>= 0.1.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/websocket.io/-/websocket.io-0.2.1.tgz#79eaf174b91ecfa4fbf14ffe268871c052e47d2a"
-  dependencies:
-    debug "*"
-    ws "0.4.20"
-
 which@^1.0.5:
   version "1.2.12"
   resolved "https://registry.yarnpkg.com/which/-/which-1.2.12.tgz#de67b5e450269f194909ef23ece4ebe416fa1192"
@@ -3055,14 +3012,6 @@ wide-align@^1.1.0:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
-
-ws@0.4.20:
-  version "0.4.20"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-0.4.20.tgz#f44b63f46b9edfc457309c720bcc0f83f2fc5874"
-  dependencies:
-    commander "~0.6.1"
-    options latest
-    tinycolor "0.x"
 
 ws@^1.1.1:
   version "1.1.1"
